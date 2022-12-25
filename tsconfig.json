@@ -1,0 +1,36 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "commonjs",
+    "lib": ["esnext", "dom"],
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "preserve",
+    "noEmit": true,
+
+    /* Strict Type-Checking Options */
+    "strict": false,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+
+    /* Additional Checks */
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": false,
+
+    /* Module Resolution Options */
+    "baseUrl": ".",
+    "paths": {
+      "/*": ["./*"],
+      "~/*": ["./*"]
+    },
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "types": ["node", "jest"],
+    "typeRoots": ["node_modules/@types", "./types/meteor"],
+    "esModuleInterop": true,
+    "preserveSymlinks": true
+  },
+  "exclude": ["./.meteor/**"]
+}
